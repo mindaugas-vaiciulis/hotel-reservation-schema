@@ -1,5 +1,8 @@
 ### Hotel Reservation schema
 
+<img src="http://twintoe.com/UI/inbox_hotel[2].png" alt="Hotel Reservation Schema" />
+
+
 1. Hotel Reservation HTML mark up
 
 ```HTML
