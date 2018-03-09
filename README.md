@@ -3,7 +3,7 @@
 <img src="http://twintoe.com/UI/inbox_hotel[2].png" alt="Hotel Reservation Schema" />
 
 
-1. Hotel Reservation HTML mark up
+**1. Hotel Reservation HTML mark up**
 
 ```HTML
 <!--Schema.org reservation-->
@@ -38,10 +38,11 @@
 </span>
 ```
 
-2. Hotel Update Reservation HTML mark up
+---
+
+**2. Hotel Update Reservation HTML mark up**
 
 ```HTML
-
 <!-- Update reservation -->
 <span itemscope itemtype="http://schema.org/LodgingReservation" style="line-height:0;font-size:0;heighty:0;">
   <meta itemprop="reservationNumber" content="FOJ-483-505"/> 				<!-- Reservation: number -->
@@ -64,13 +65,15 @@
   <meta itemprop="checkinDate" content="2018-04-10T16:00:00-08:00"/> 		<!-- Check out date -->
   <meta itemprop="modifiedTime" content="2018-05-01T08:00:00-08:00"/>		<!-- Modified time -->
   <link itemprop="modifyReservationUrl" href="http://linkToModify.com"/> 	<!-- Url to modify booking page -->
-</span>```
+</span>
+```
 
-3. Hotel Cancel reservation HTML mark up
+---
+
+**3. Hotel Cancel reservation HTML mark up**
 
 ```HTML
-
-<!-- Update reservation -->
+<!-- Cancel reservation -->
 <span itemscope itemtype="http://schema.org/LodgingReservation" style="line-height:0;font-size:0;heighty:0;">
   <meta itemprop="reservationNumber" content="FFF-483-505"/>
   <link itemprop="reservationStatus" href="http://schema.org/Cancelled"/>
@@ -92,4 +95,5 @@
   <meta itemprop="checkinDate" content="2027-04-11T16:00:00-08:00"/>
   <meta itemprop="checkoutDate" content="2027-04-13T11:00:00-08:00"/>
   <meta itemprop="modifiedTime" content="2027-05-01T08:30:00-08:00"/>
-  <link itemprop="modifyReservationUrl" href="https://hotel.com/manage"/>```
+  <link itemprop="modifyReservationUrl" href="https://hotel.com/manage"/>
+  ```
