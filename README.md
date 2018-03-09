@@ -11,8 +11,8 @@
   <meta itemprop="reservationNumber" content="FFF-483-505"/> 				<!-- Reservation: number -->
   <link itemprop="reservationStatus" href="http://schema.org/Confirmed"/>
   <span itemprop="underName" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="Fistname Lastname"/> 						<!-- Billing contact -->
-	<meta itemprop="email" content="email@address.com "/> 						<!-- Email address - person or organization the reservation or ticket is for. -->
+  <meta itemprop="name" content="Fistname Lastname"/> 						<!-- Billing contact -->
+  <meta itemprop="email" content="email@address.com "/> 						<!-- Email address - person or organization the reservation or ticket is for. -->
   </span>
   <span itemprop="reservationFor" itemscope itemtype="http://schema.org/LodgingBusiness">
     <meta itemprop="name" content="Hotel Name "/> 					<!-- Property name -->
@@ -34,3 +34,31 @@
   <meta itemprop="checkinDate" content="2018-04-10T16:00:00-08:00"/> 		<!-- Check out date -->
 </span>
 ```
+
+2. Basic Hotel Update Reservation HTML mark up
+
+```HTML
+
+<!-- Update reservation -->
+<span itemscope itemtype="http://schema.org/LodgingReservation" style="line-height:0;font-size:0;heighty:0;">
+  <meta itemprop="reservationNumber" content="FOJ-483-505"/> 				<!-- Reservation: number -->
+  <link itemprop="reservationStatus" href="http://schema.org/Confirmed"/>
+  <span itemprop="underName" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Fistname Lastname"/> 						<!-- Billing contact -->
+  </span>
+  <span itemprop="reservationFor" itemscope itemtype="http://schema.org/LodgingBusiness">
+    <meta itemprop="name" content="Bayards Cove Inn "/> 					<!-- Property name -->
+    <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+      <meta itemprop="streetAddress" content="Address lines 1 to 3"/> 					<!-- Address line 1, address line 2, address line 3  -->
+      <meta itemprop="addressLocality" content="London"/> 					<!-- City -->
+      <meta itemprop="addressRegion" content="Devon "/> 					<!-- Region -->
+      <meta itemprop="postalCode" content="TQ6 9AN "/> 						<!-- Postcode -->
+      <meta itemprop="addressCountry" content="United Kingdom"/> 			<!-- Country -->
+    </span>
+    <meta itemprop="telephone" content="+44 180 3839 278"/> 				<!-- Business tel number -->
+  </span>
+  <meta itemprop="checkoutDate" content="2018-04-13T11:00:00-08:00"/> 		<!-- Check in date -->
+  <meta itemprop="checkinDate" content="2018-04-10T16:00:00-08:00"/> 		<!-- Check out date -->
+  <meta itemprop="modifiedTime" content="2018-05-01T08:00:00-08:00"/>		<!-- Modified time -->
+  <link itemprop="modifyReservationUrl" href="http://linkToModify.com"/> 	<!-- Url to modify booking page -->
+</span>```
