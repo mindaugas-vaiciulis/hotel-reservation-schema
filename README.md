@@ -1,6 +1,6 @@
 ### Hotel Reservation schema
 
-1. Basic Hotel Reservation HTML mark up
+1. Hotel Reservation HTML mark up
 
 ```HTML
 <!--Schema.org reservation-->
@@ -35,7 +35,7 @@
 </span>
 ```
 
-2. Basic Hotel Update Reservation HTML mark up
+2. Hotel Update Reservation HTML mark up
 
 ```HTML
 
