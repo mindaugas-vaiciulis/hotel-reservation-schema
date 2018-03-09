@@ -65,3 +65,31 @@
   <meta itemprop="modifiedTime" content="2018-05-01T08:00:00-08:00"/>		<!-- Modified time -->
   <link itemprop="modifyReservationUrl" href="http://linkToModify.com"/> 	<!-- Url to modify booking page -->
 </span>```
+
+3. Hotel Cancel reservation HTML mark up
+
+```HTML
+
+<!-- Update reservation -->
+<span itemscope itemtype="http://schema.org/LodgingReservation" style="line-height:0;font-size:0;heighty:0;">
+  <meta itemprop="reservationNumber" content="FFF-483-505"/>
+  <link itemprop="reservationStatus" href="http://schema.org/Cancelled"/>
+  <span itemprop="underName" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Fistname Lastname"/> 
+  </span>
+  <span itemprop="reservationFor" itemscope itemtype="http://schema.org/LodgingBusiness">
+    <meta itemprop="name" content="Hotel Name "/> 							<!-- Property name -->
+	<meta itemprop="url" content="https://hotel.com"/> 						<!-- Business URL (with shortname)  -->
+	<meta itemprop="telephone" content="+44 000 111 222"/> 					<!-- Business tel number -->
+    <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+      <meta itemprop="streetAddress" content="Address"/> 					<!-- Address line 1, address line 2, address line 3  -->
+      <meta itemprop="addressLocality" content="London"/> 					<!-- City -->
+      <meta itemprop="addressRegion" content="Devon "/> 					<!-- Region -->
+      <meta itemprop="postalCode" content="T00 974 "/> 						<!-- Postcode -->
+      <meta itemprop="addressCountry" content="United Kingdom"/> 			<!-- Country -->
+    </span>   				
+  </span>
+  <meta itemprop="checkinDate" content="2027-04-11T16:00:00-08:00"/>
+  <meta itemprop="checkoutDate" content="2027-04-13T11:00:00-08:00"/>
+  <meta itemprop="modifiedTime" content="2027-05-01T08:30:00-08:00"/>
+  <link itemprop="modifyReservationUrl" href="https://hotel.com/manage"/>```
